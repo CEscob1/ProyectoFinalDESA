@@ -1,0 +1,76 @@
+.tasklist-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid #ddd;  /* Borde alrededor de las tres columnas */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Asegura que se ajusten en pantallas más pequeñas */
+  }
+  
+  .tasklist-column {
+    flex: 1;
+    min-width: 300px; /* Ancho mínimo para las columnas */
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 15px; /* Añadir más espacio entre las tareas */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Para asegurarnos de que los elementos se apilen */
+  }
+  
+  .task-item p {
+    margin: 10px 0; /* Aumentar el espacio entre cada línea */
+  }
+  
+  button {
+    transition: all 0.3s ease;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Aseguramos que los botones no estén pegados al texto */
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  .complete-button {
+    background: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  .incomplete-button {
+    background: #007bff;
+    color: white;
+    border: none;
+  }
+  
+  .delete-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+  }
